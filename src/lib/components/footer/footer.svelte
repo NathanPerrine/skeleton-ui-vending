@@ -25,7 +25,7 @@
 	];
 </script>
 
-<footer class="w-full flex justify-center mb-8">
+<footer class="w-full flex justify-center mb-8 border-t-2 border-primary-500">
 	<div class="w-full max-w-7xl flex flex-col">
 		<div>
 			<h2 class="font-bold text-2xl text-center">Connect with us</h2>
@@ -61,7 +61,7 @@
 				<!-- social icons -->
 				<div class="flex justify-between">
 					{#each socials as social (social.site)}
-						<a href={social.link} class="p-4 border border-gray-500 rounded-md">
+						<a href={social.link} class="p-4 border border-gray-500 text-primary-800 variant-soft rounded-md">
 							<Icon icon={social.icon} width="24px" />
 						</a>
 					{/each}
