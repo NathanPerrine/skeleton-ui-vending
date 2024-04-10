@@ -53,7 +53,7 @@
 					{/each}
 				</div>
 				<!-- divider -->
-				<div class="h-4/5 border border-gray-600 self-center"></div>
+				<div class="h-4/5 border border-surface-600 self-center"></div>
 
 				<div class="w-full">
 					{#each servicesRight as service (service.service)}
@@ -82,28 +82,28 @@
 					/>
 				</div>
 				<!-- text -->
-				<div class="w-1/4 chooseTextContainer topLeft">
+				<div class="card variant-filled-primary bg-primary-300 w-1/4 chooseTextContainer topLeft">
 					<h2 class="font-bold text-lg">Reliability</h2>
 					<p>
 						With SnackMaster, you can count on dependable vending services that are always there
 						when you need them.
 					</p>
 				</div>
-				<div class="w-1/4 chooseTextContainer center">
+				<div class="card variant-filled-primary bg-primary-300 w-1/4 chooseTextContainer center">
 					<h2 class="font-bold text-lg">Variety</h2>
 					<p>
 						We offer an extensive selection of snacks and beverages to please every palate and
 						dietary need.
 					</p>
 				</div>
-				<div class="w-1/4 chooseTextContainer bottomLeft">
+				<div class="card variant-filled-primary bg-primary-300 w-1/4 chooseTextContainer bottomLeft">
 					<h2 class="font-bold text-lg">Convenience</h2>
 					<p>
 						Our hassle-free placement, maintenance, and restocking services make vending easy and
 						stress-free for you.
 					</p>
 				</div>
-				<div class="w-1/4 chooseTextContainer bottomRight">
+				<div class="card variant-filled-primary bg-primary-300 w-1/4 chooseTextContainer bottomRight">
 					<h2 class="font-bold text-lg">Exceptional Customer Service</h2>
 					<p>
 						We pride ourselves on delivering superior customer service and building lasting
@@ -216,13 +216,10 @@
   }
 
 	.chooseTextContainer {
-		// background-color: $background;
-
 		border-radius: 0.5rem;
-		// border: 2px solid $dark-accent;
 		position: absolute;
 		padding: 8px;
-    // box-shadow: 5px 5px 2px $dark-accent;
+    box-shadow: 5px 5px 2px rgb(var(--color-tertiary-400));
 
 		&.topLeft {
 			top: 10%;
@@ -302,7 +299,7 @@
 
 	.carousel__item-head {
 		border-radius: 50%;
-		background-color: #d7f7fc;
+    @apply bg-primary-300;
 		width: 90px;
 		height: 90px;
 		padding: 14px;
@@ -317,7 +314,7 @@
 
 	.carousel__item-body {
 		width: 100%;
-		background-color: #fff;
+    @apply bg-secondary-300;
 		border-radius: 8px;
 		padding: 16px 20px 16px 70px;
 	}
