@@ -70,13 +70,3 @@
 		</div>
 	</div>
 </footer>
-
-<!-- <style lang="scss">
-	footer {
-		border-top: 2px solid $dark-accent;
-	}
-
-  a {
-    color: $dark-accent;
-  }
-</style> -->
