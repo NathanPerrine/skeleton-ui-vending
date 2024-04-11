@@ -59,7 +59,7 @@
 			<div class="w-1/4 flex flex-col my-2">
 				<h3 class="self-center font-bold text-xl my-4">Socials</h3>
 				<!-- social icons -->
-				<div class="flex justify-between">
+				<div class="flex justify-between flex-col md:flex-row">
 					{#each socials as social (social.site)}
 						<a href={social.link} class="p-4 border border-gray-500 text-primary-800 variant-soft rounded-md">
 							<Icon icon={social.icon} width="24px" />

@@ -1,13 +1,14 @@
 <script lang="ts">
 	import VendingDisplay from '$lib/assets/images/VendingDisplay.png';
 	import vendingOffice from '$lib/assets/images/vendingOffice.jpg';
-  import sweet from '$lib/assets/images/sweet.jpg'
-  import salty from '$lib/assets/images/salty.jpg'
-  import nutsAndSeeds from '$lib/assets/images/nutsAndSeeds.jpg'
-  import roastedChickpeas from '$lib/assets/images/roastedChickpeas.jpg'
-  import riceCrackers from '$lib/assets/images/riceCrackers.jpg'
-  import mochi from '$lib/assets/images/mochi.jpg'
-  import popCans from '$lib/assets/images/popCans.jpg'
+	import vendingMachineAlley from '$lib/assets/images/vendingMachineAlley.jpg';
+	import sweet from '$lib/assets/images/sweet.jpg';
+	import salty from '$lib/assets/images/salty.jpg';
+	import nutsAndSeeds from '$lib/assets/images/nutsAndSeeds.jpg';
+	import roastedChickpeas from '$lib/assets/images/roastedChickpeas.jpg';
+	import riceCrackers from '$lib/assets/images/riceCrackers.jpg';
+	import mochi from '$lib/assets/images/mochi.jpg';
+	import popCans from '$lib/assets/images/popCans.jpg';
 	import Services from './Services.svelte';
 	import services from '$lib/data/services.json';
 	let servicesLeft = services.slice(0, 2);
@@ -16,32 +17,33 @@
 
 <main class="w-full flex flex-col justify-center">
 	<!-- Hero -->
-	<div class="w-full py-3 wavy flex justify-center">
-		<!-- hero -->
-		<section id="hero" class="max-w-7xl flex justify-around items-center">
-			<div
-				id="heroTextContainer"
-				class="w-1/3 min-h-min p-4 flex flex-col justify-center rounded-lg"
-			>
-				<h1 class="text-3xl font-bold">Welcome to SnackMaster</h1>
-				<p class="text-lg pt-4">
-					At SnackMaster, we're dedicated to providing convenient, reliable, and satisfying vending
-					solutions for businesses, schools, hospitals, and other institutions throughout the
-					greater Toledo area. With our extensive range of vending machines and unparalleled
-					customer service, we make snack time a breeze.
-				</p>
-			</div>
+	<div id="hero" class="w-full max-w-7xl mx-auto pb-3 flex justify-center relative">
+		<img
+			src={vendingMachineAlley}
+			alt="Vending machines in alley way"
+			class="min-w-[100vw] h-[75vh]"
+		/>
 
-			<img src={VendingDisplay} alt="vending machines selection" height="500" />
-		</section>
+		<div
+			id="heroTextContainer"
+			class="card w-5/6 md:w-96 min-h-min p-4 flex flex-col justify-center rounded-lg absolute top-[10%] md:top-[33%] md:left-16 mx-2"
+		>
+			<h1 class="h1">Welcome to SnackMaster</h1>
+			<p class="text-lg pt-4">
+				At SnackMaster, we're dedicated to providing convenient, reliable, and satisfying vending
+				solutions for businesses, schools, hospitals, and other institutions throughout the greater
+				Toledo area. With our extensive range of vending machines and unparalleled customer service,
+				we make snack time a breeze.
+			</p>
+		</div>
 	</div>
 
 	<!-- services -->
 	<div class="w-full flex justify-center">
 		<section id="ourServices" class="w-full max-w-7xl flex flex-col items-center mx-4">
-			<h2 class="font-bold text-2xl">Our Services</h2>
+			<h2 class="h2">Our Services</h2>
 			<!-- services container -->
-			<div class="flex justify-between gap-4 my-4">
+			<div class="flex justify-between flex-col md:flex-row gap-4 my-4">
 				<div class="w-full">
 					{#each servicesLeft as service (service.service)}
 						<Services
@@ -53,7 +55,7 @@
 					{/each}
 				</div>
 				<!-- divider -->
-				<div class="h-4/5 border border-surface-600 self-center"></div>
+				<div class="hidden md:block h-4/5 border border-surface-600 self-center"></div>
 
 				<div class="w-full">
 					{#each servicesRight as service (service.service)}
@@ -96,14 +98,18 @@
 						dietary need.
 					</p>
 				</div>
-				<div class="card variant-filled-primary bg-primary-300 w-1/4 chooseTextContainer bottomLeft">
+				<div
+					class="card variant-filled-primary bg-primary-300 w-1/4 chooseTextContainer bottomLeft"
+				>
 					<h2 class="font-bold text-lg">Convenience</h2>
 					<p>
 						Our hassle-free placement, maintenance, and restocking services make vending easy and
 						stress-free for you.
 					</p>
 				</div>
-				<div class="card variant-filled-primary bg-primary-300 w-1/4 chooseTextContainer bottomRight">
+				<div
+					class="card variant-filled-primary bg-primary-300 w-1/4 chooseTextContainer bottomRight"
+				>
 					<h2 class="font-bold text-lg">Exceptional Customer Service</h2>
 					<p>
 						We pride ourselves on delivering superior customer service and building lasting
@@ -127,74 +133,74 @@
 			<!-- carousel -->
 			<div class="wrapper">
 				<div class="carousel">
-          <!-- sweet -->
+					<!-- sweet -->
 					<div class="carousel__item">
 						<div class="carousel__item-head">
-              <img src={sweet} alt="Sweet candies" class="roundedImg" />
-            </div>
+							<img src={sweet} alt="Sweet candies" class="roundedImg" />
+						</div>
 						<div class="carousel__item-body">
 							<p class="title">Sweet</p>
-              <p>Candies, chocolate bars, cookies, gummies</p>
+							<p>Candies, chocolate bars, cookies, gummies</p>
 						</div>
 					</div>
-          <!-- salty -->
+					<!-- salty -->
 					<div class="carousel__item">
 						<div class="carousel__item-head">
-              <img src={salty} alt="chips" class="roundedImg" />
-            </div>
+							<img src={salty} alt="chips" class="roundedImg" />
+						</div>
 						<div class="carousel__item-body">
 							<p class="title">Salty</p>
-              <p>Chips, pretzels, popcorn, crackers, jerky</p>
+							<p>Chips, pretzels, popcorn, crackers, jerky</p>
 						</div>
 					</div>
-          <!-- healthy -->
+					<!-- healthy -->
 					<div class="carousel__item">
 						<div class="carousel__item-head">
-              <img src={nutsAndSeeds} alt="nuts and seeds" class="roundedImg" />
-            </div>
+							<img src={nutsAndSeeds} alt="nuts and seeds" class="roundedImg" />
+						</div>
 						<div class="carousel__item-body">
 							<p class="title">Healthy</p>
-              <p>Nuts & seeds, granola, dried fruits, yogurt</p>
+							<p>Nuts & seeds, granola, dried fruits, yogurt</p>
 						</div>
 					</div>
-          <!-- Savory -->
+					<!-- Savory -->
 					<div class="carousel__item">
 						<div class="carousel__item-head">
-              <img src={roastedChickpeas} alt="roasted chickpeas" class="roundedImg" />
-            </div>
+							<img src={roastedChickpeas} alt="roasted chickpeas" class="roundedImg" />
+						</div>
 						<div class="carousel__item-body">
 							<p class="title">Savory</p>
-              <p>Roasted chickpeas, peanut butter crackers, protein rich snacks</p>
+							<p>Roasted chickpeas, peanut butter crackers, protein rich snacks</p>
 						</div>
 					</div>
-          <!-- Gluten-Free -->
+					<!-- Gluten-Free -->
 					<div class="carousel__item">
 						<div class="carousel__item-head">
-              <img src={riceCrackers} alt="rice crackers" class="roundedImg" />
-            </div>
+							<img src={riceCrackers} alt="rice crackers" class="roundedImg" />
+						</div>
 						<div class="carousel__item-body">
 							<p class="title">Gluten-Free</p>
-              <p>Rice or Corn based crackers and chips, nuts & seed bars, gluten-free cookies</p>
+							<p>Rice or Corn based crackers and chips, nuts & seed bars, gluten-free cookies</p>
 						</div>
 					</div>
-          <!-- International -->
+					<!-- International -->
 					<div class="carousel__item">
 						<div class="carousel__item-head">
-              <img src={mochi} alt="mochi" class="roundedImg" />
-            </div>
+							<img src={mochi} alt="mochi" class="roundedImg" />
+						</div>
 						<div class="carousel__item-body">
 							<p class="title">International</p>
-              <p>Rice crackers, nori, spiced nuts, mochi</p>
+							<p>Rice crackers, nori, spiced nuts, mochi</p>
 						</div>
 					</div>
-          <!-- Drinks -->
+					<!-- Drinks -->
 					<div class="carousel__item">
 						<div class="carousel__item-head">
-              <img src={popCans} alt="pop cans" class="roundedImg" />
-            </div>
+							<img src={popCans} alt="pop cans" class="roundedImg" />
+						</div>
 						<div class="carousel__item-body">
 							<p class="title">Drinks</p>
-              <p>Pepsi, Coke, bottled waters, energy drinks, teas, juices, iced coffees</p>
+							<p>Pepsi, Coke, bottled waters, energy drinks, teas, juices, iced coffees</p>
 						</div>
 					</div>
 				</div>
@@ -202,32 +208,30 @@
 
 			<p>
 				Our stock is always expanding to meet the needs and preferences of our customers, for a more
-				comprehensive list please contact us <a href="mailto:snackmaster@gmail.com" class="link">here</a>
+				comprehensive list please contact us <a href="mailto:snackmaster@gmail.com" class="link"
+					>here</a
+				>
 			</p>
 		</section>
 	</div>
 </main>
 
 <style lang="scss">
-  .roundedImg{
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
-  }
+	.roundedImg {
+		border-radius: 50%;
+		width: 100%;
+		height: 100%;
+	}
 
 	.chooseTextContainer {
 		border-radius: 0.5rem;
 		position: absolute;
 		padding: 8px;
-    box-shadow: 5px 5px 2px rgb(var(--color-tertiary-400));
+		box-shadow: 5px 5px 2px rgb(var(--color-tertiary-400));
 
 		&.topLeft {
 			top: 10%;
 			left: 7%;
-		}
-		&.topRight {
-			top: 10%;
-			right: 5%;
 		}
 		&.bottomLeft {
 			bottom: 10%;
@@ -299,7 +303,7 @@
 
 	.carousel__item-head {
 		border-radius: 50%;
-    @apply bg-primary-300;
+		@apply bg-primary-300;
 		width: 90px;
 		height: 90px;
 		padding: 14px;
@@ -314,7 +318,7 @@
 
 	.carousel__item-body {
 		width: 100%;
-    @apply bg-secondary-300;
+		@apply bg-secondary-300;
 		border-radius: 8px;
 		padding: 16px 20px 16px 70px;
 	}
