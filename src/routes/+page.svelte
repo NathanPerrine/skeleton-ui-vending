@@ -26,7 +26,7 @@
 
 		<div
 			id="heroTextContainer"
-			class="card w-5/6 md:w-96 min-h-min p-4 flex flex-col justify-center rounded-lg absolute top-[10%] md:top-[33%] md:left-16 mx-2"
+			class="card w-5/6 md:w-96 min-h-min p-4 flex flex-col justify-center rounded-lg absolute top-[10%] md:top-[33%] md:left-16 mx-2 variant-filled-primary bg-primary-400"
 		>
 			<h1 class="h1">Welcome to SnackMaster</h1>
 			<p class="text-lg pt-4">
@@ -74,7 +74,7 @@
 	<!-- Why choose us -->
 	<div class="wavy flex justify-center w-full h-full">
 		<div class="w-full max-w-7xl flex flex-col justify-center my-4">
-			<h2 class="font-bold text-2xl mb-4 text-center">Why Choose SnackMaster Vending Solutions?</h2>
+			<h2 class="h2 mb-4 text-center">Why Choose SnackMaster Vending Solutions?</h2>
 			<section class="mx-4 relative">
 				<div>
 					<img
@@ -84,33 +84,33 @@
 					/>
 				</div>
 				<!-- text -->
-				<div class="card variant-filled-primary bg-primary-300 w-1/4 chooseTextContainer topLeft">
-					<h2 class="font-bold text-lg">Reliability</h2>
+				<div class="card md:variant-filled-primary md:bg-primary-300 chooseTextContainer topLeft">
+					<h3 class="h3">Reliability</h3>
 					<p>
 						With SnackMaster, you can count on dependable vending services that are always there
 						when you need them.
 					</p>
 				</div>
-				<div class="card variant-filled-primary bg-primary-300 w-1/4 chooseTextContainer center">
-					<h2 class="font-bold text-lg">Variety</h2>
+				<div class="card md:variant-filled-primary md:bg-primary-300 chooseTextContainer center">
+					<h3 class="h3">Variety</h3>
 					<p>
 						We offer an extensive selection of snacks and beverages to please every palate and
 						dietary need.
 					</p>
 				</div>
 				<div
-					class="card variant-filled-primary bg-primary-300 w-1/4 chooseTextContainer bottomLeft"
+					class="card md:variant-filled-primary md:bg-primary-300 chooseTextContainer bottomLeft"
 				>
-					<h2 class="font-bold text-lg">Convenience</h2>
+					<h3 class="h3">Convenience</h3>
 					<p>
 						Our hassle-free placement, maintenance, and restocking services make vending easy and
 						stress-free for you.
 					</p>
 				</div>
 				<div
-					class="card variant-filled-primary bg-primary-300 w-1/4 chooseTextContainer bottomRight"
+					class="card md:variant-filled-primary md:bg-primary-300 chooseTextContainer bottomRight"
 				>
-					<h2 class="font-bold text-lg">Exceptional Customer Service</h2>
+					<h3 class="h3">Exceptional Customer Service</h3>
 					<p>
 						We pride ourselves on delivering superior customer service and building lasting
 						relationships with our clients.
@@ -122,8 +122,8 @@
 
 	<!-- Our Products -->
 	<div class="w-full flex justify-center mb-8">
-		<section class="w-full max-w-7xl flex flex-col items-center justify-between mx-4 h-[500px]">
-			<h2 class="font-bold text-xl">Our products</h2>
+		<section class="w-full max-w-7xl flex flex-col items-center justify-between mx-4 h-[100vh] md:h-[500px]">
+			<h2 class="h2 mt-2">Our products</h2>
 			<p class="text-center">
 				By offering a diverse selection that inclueds healthy options, salty snacks, and sweet
 				treats, we can ensure our vending machines are stocked with a wide variety of items that
@@ -208,9 +208,8 @@
 
 			<p>
 				Our stock is always expanding to meet the needs and preferences of our customers, for a more
-				comprehensive list please contact us <a href="mailto:snackmaster@gmail.com" class="link"
-					>here</a
-				>
+				comprehensive list please contact us <a href="mailto:snackmaster@gmail.com" class="underline"
+					>here</a>.
 			</p>
 		</section>
 	</div>
@@ -225,26 +224,45 @@
 
 	.chooseTextContainer {
 		border-radius: 0.5rem;
-		position: absolute;
+    margin: 8px 4px;
 		padding: 8px;
-		box-shadow: 5px 5px 2px rgb(var(--color-tertiary-400));
+
+    @media (min-width: 768px) {
+      box-shadow: 5px 5px 2px rgb(var(--color-tertiary-400));
+    }
 
 		&.topLeft {
-			top: 10%;
-			left: 7%;
+      @media (min-width: 768px) {
+        width: 25%;
+        position: absolute;
+        top: 10%;
+        left: 7%;
+      }
 		}
 		&.bottomLeft {
-			bottom: 10%;
-			left: 3%;
+      @media (min-width: 768px) {
+        width: 25%;
+        position: absolute;
+        bottom: 10%;
+        left: 3%;
+      }
 		}
 		&.bottomRight {
-			bottom: 10%;
-			right: 5%;
+      @media (min-width: 768px){
+        width: 25%;
+        position: absolute;
+        bottom: 10%;
+        right: 5%;
+      }
 		}
 		&.center {
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
+      @media (min-width: 768px) {
+        width: 25%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
 		}
 	}
 

@@ -1,7 +1,7 @@
 <script lang="ts">
   import vendingIcon from "$lib/assets/images/vending-machine.svg"
 </script>
-<nav class="z-10 w-full flex justify-center sticky top-0 py-2 border-b-2 border-primary-500 variant-filled-primary">
+<nav class="z-10 w-full flex justify-center sticky top-0 py-2 border-b-2 border-primary-500 variant-glass-tertiary">
   <div class="w-full max-w-7xl flex flex-row justify-between">
     <div class="flex items-center">
       <img src={vendingIcon} alt="Vending machine icon" width="50px"/>
