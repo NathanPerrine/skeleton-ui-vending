@@ -26,7 +26,7 @@
 
 		<div
 			id="heroTextContainer"
-			class="card w-5/6 md:w-96 min-h-min p-4 flex flex-col justify-center rounded-lg absolute top-[10%] md:top-[33%] md:left-16 mx-2 variant-filled-primary bg-primary-400"
+			class="card w-5/6 md:w-96 min-h-min p-4 flex flex-col justify-center rounded-lg absolute top-[10%] md:top-[33%] md:left-16 mx-2 variant-filled-primary bg-primary-300"
 		>
 			<h1 class="h1">Welcome to SnackMaster</h1>
 			<p class="text-lg pt-4">

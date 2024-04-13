@@ -25,7 +25,7 @@
 	];
 </script>
 
-<footer class="w-full mb-8 border-t-2 border-primary-500">
+<footer class="w-full mb-8 border-t-2 border-primary-500 flex justify-center">
 	<div class="w-full max-w-7xl flex flex-col">
 		<div>
 			<h2 class="font-bold text-2xl text-center my-4">Connect with us</h2>
