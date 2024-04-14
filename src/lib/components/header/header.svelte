@@ -9,7 +9,9 @@
       <a href="/" class="hidden md:block text-2xl my-auto">SnackMaster Vending Solutions</a>
     </div>
 
-    <div class="flex items-center">
+
+    <div class="flex items-center gap-8">
+      <LightSwitch />
       <a href="/contactus" class="btn rounded-full font-semibold p-2 mr-2 variant-filled-tertiary border-2 border-tertiary-700">Contact Us</a>
     </div>
   </div>

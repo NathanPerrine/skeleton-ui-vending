@@ -1,5 +1,4 @@
 <script lang="ts">
-	import VendingDisplay from '$lib/assets/images/VendingDisplay.png';
 	import vendingOffice from '$lib/assets/images/vendingOffice.jpg';
 	import vendingMachineAlley from '$lib/assets/images/vendingMachineAlley.jpg';
 	import isoOffice from '$lib/assets/images/isoOffice.png';
@@ -73,9 +72,6 @@
 						/>
 					{/each}
 				</div>
-				<!-- divider -->
-				<!-- <div class="hidden md:block h-4/5 border border-surface-600 self-center"></div> -->
-
 				<div class="w-full md:mt-8">
 					{#each servicesRight as service (service.service)}
 						<Services
