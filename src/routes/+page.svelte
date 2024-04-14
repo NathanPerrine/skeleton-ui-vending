@@ -2,6 +2,7 @@
 	import VendingDisplay from '$lib/assets/images/VendingDisplay.png';
 	import vendingOffice from '$lib/assets/images/vendingOffice.jpg';
 	import vendingMachineAlley from '$lib/assets/images/vendingMachineAlley.jpg';
+	import isoOffice from '$lib/assets/images/isoOffice.png';
 	import sweet from '$lib/assets/images/sweet.jpg';
 	import salty from '$lib/assets/images/salty.jpg';
 	import nutsAndSeeds from '$lib/assets/images/nutsAndSeeds.jpg';
@@ -17,7 +18,7 @@
 
 <main class="w-full flex flex-col justify-center">
 	<!-- Hero -->
-	<div id="hero" class="w-full max-w-7xl mx-auto pb-3 flex justify-center relative">
+	<!-- <div id="hero" class="w-full max-w-7xl mx-auto pb-3 flex justify-center relative">
 		<img
 			src={vendingMachineAlley}
 			alt="Vending machines in alley way"
@@ -35,6 +36,24 @@
 				Toledo area. With our extensive range of vending machines and unparalleled customer service,
 				we make snack time a breeze.
 			</p>
+		</div>
+	</div> -->
+
+	<div id="hero" class="w-full flex justify-center">
+		<div class="w-full max-w-7xl my-8 flex gap-8 justify-center">
+			<img src={isoOffice} alt="Isometric view of an office with vending machines" class="w-[600px] order-2 hidden md:block" />
+			<div
+				id="heroTextContainer"
+				class="card w-5/6 md:w-96 p-4 flex flex-col justify-center rounded-lg mx-2 variant-soft order-1 !bg-transparent"
+			>
+				<h1 class="h1">Welcome to SnackMaster</h1>
+				<p class="text-lg pt-4">
+					At SnackMaster, we're dedicated to providing convenient, reliable, and satisfying vending
+					solutions for businesses, schools, hospitals, and other institutions throughout the
+					greater Toledo area. With our extensive range of vending machines and unparalleled
+					customer service, we make snack time a breeze.
+				</p>
+			</div>
 		</div>
 	</div>
 
@@ -55,9 +74,9 @@
 					{/each}
 				</div>
 				<!-- divider -->
-				<div class="hidden md:block h-4/5 border border-surface-600 self-center"></div>
+				<!-- <div class="hidden md:block h-4/5 border border-surface-600 self-center"></div> -->
 
-				<div class="w-full">
+				<div class="w-full md:mt-8">
 					{#each servicesRight as service (service.service)}
 						<Services
 							icon={service.icon}
@@ -122,7 +141,9 @@
 
 	<!-- Our Products -->
 	<div class="w-full flex justify-center mb-8">
-		<section class="w-full max-w-7xl flex flex-col items-center justify-between mx-4 h-[100vh] md:h-[500px]">
+		<section
+			class="w-full max-w-7xl flex flex-col items-center justify-between mx-4 h-[100vh] md:h-[500px]"
+		>
 			<h2 class="h2 mt-2">Our products</h2>
 			<p class="text-center">
 				By offering a diverse selection that inclueds healthy options, salty snacks, and sweet
@@ -208,8 +229,10 @@
 
 			<p>
 				Our stock is always expanding to meet the needs and preferences of our customers, for a more
-				comprehensive list please contact us <a href="mailto:snackmaster@gmail.com" class="underline"
-					>here</a>.
+				comprehensive list please contact us <a
+					href="mailto:snackmaster@gmail.com"
+					class="underline">here</a
+				>.
 			</p>
 		</section>
 	</div>
@@ -224,56 +247,56 @@
 
 	.chooseTextContainer {
 		border-radius: 0.5rem;
-    margin: 8px 4px;
+		margin: 8px 4px;
 		padding: 8px;
 
-    @media (min-width: 768px) {
-      box-shadow: 5px 5px 2px rgb(var(--color-tertiary-400));
-    }
+		@media (min-width: 768px) {
+			box-shadow: 5px 5px 2px rgb(var(--color-tertiary-400));
+		}
 
 		&.topLeft {
-      @media (min-width: 768px) {
-        width: 25%;
-        position: absolute;
-        top: 10%;
-        left: 7%;
-      }
+			@media (min-width: 768px) {
+				width: 25%;
+				position: absolute;
+				top: 10%;
+				left: 7%;
+			}
 		}
 		&.bottomLeft {
-      @media (min-width: 768px) {
-        width: 25%;
-        position: absolute;
-        bottom: 10%;
-        left: 3%;
-      }
+			@media (min-width: 768px) {
+				width: 25%;
+				position: absolute;
+				bottom: 10%;
+				left: 3%;
+			}
 		}
 		&.bottomRight {
-      @media (min-width: 768px){
-        width: 25%;
-        position: absolute;
-        bottom: 10%;
-        right: 5%;
-      }
+			@media (min-width: 768px) {
+				width: 25%;
+				position: absolute;
+				bottom: 10%;
+				right: 5%;
+			}
 		}
 		&.center {
-      @media (min-width: 768px) {
-        width: 25%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
+			@media (min-width: 768px) {
+				width: 25%;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
 		}
 	}
 
-	#hero {
-		width: full;
-		position: relative;
+	// #hero {
+	// 	width: full;
+	// 	position: relative;
 
-		img {
-			width: 400px;
-		}
-	}
+	// 	// img {
+	// 	// 	width: 400px;
+	// 	// }
+	// }
 
 	$animation-timing: 28s;
 	$carousel-items: 7;
