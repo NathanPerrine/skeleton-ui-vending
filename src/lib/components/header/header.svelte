@@ -6,7 +6,7 @@
   <div class="w-full max-w-7xl flex flex-row justify-between">
     <div class="flex items-center">
       <a href="/"><img src={vendingIcon} alt="Vending machine icon" width="50px"/></a>
-      <a href="/" class="hidden md:block text-2xl my-auto">SnackMaster Vending Solutions</a>
+      <a href="/" class="hidden md:block text-2xl my-auto">SnakMaster Vending Solutions</a>
     </div>
 
 

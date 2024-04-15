@@ -45,12 +45,12 @@
 				id="heroTextContainer"
 				class="card w-5/6 md:w-96 p-4 flex flex-col justify-center rounded-lg mx-2 variant-soft order-1 !bg-transparent"
 			>
-				<h1 class="h1">Welcome to SnackMaster</h1>
+				<h1 class="h1">Welcome to SnakMaster</h1>
 				<p class="text-lg pt-4">
-					At SnackMaster, we're dedicated to providing convenient, reliable, and satisfying vending
+					At SnakMaster, we're dedicated to providing convenient, reliable, and satisfying vending
 					solutions for businesses, schools, hospitals, and other institutions throughout the
 					greater Toledo area. With our extensive range of vending machines and unparalleled
-					customer service, we make snack time a breeze.
+					customer service, we make snak time a breeze.
 				</p>
 			</div>
 		</div>
@@ -89,7 +89,7 @@
 	<!-- Why choose us -->
 	<div class="wavy flex justify-center w-full h-full">
 		<div class="w-full max-w-7xl flex flex-col justify-center my-4">
-			<h2 class="h2 mb-4 text-center">Why Choose SnackMaster Vending Solutions?</h2>
+			<h2 class="h2 mb-4 text-center">Why Choose SnakMaster Vending Solutions?</h2>
 			<section class="mx-4 relative">
 				<div>
 					<img
@@ -102,14 +102,14 @@
 				<div class="card md:variant-filled-primary md:bg-primary-300 chooseTextContainer topLeft">
 					<h3 class="h3">Reliability</h3>
 					<p>
-						With SnackMaster, you can count on dependable vending services that are always there
+						With SnakMaster, you can count on dependable vending services that are always there
 						when you need them.
 					</p>
 				</div>
 				<div class="card md:variant-filled-primary md:bg-primary-300 chooseTextContainer center">
 					<h3 class="h3">Variety</h3>
 					<p>
-						We offer an extensive selection of snacks and beverages to please every palate and
+						We offer an extensive selection of snaks and beverages to please every palate and
 						dietary need.
 					</p>
 				</div>
@@ -142,7 +142,7 @@
 		>
 			<h2 class="h2 mt-2">Our products</h2>
 			<p class="text-center">
-				By offering a diverse selection that inclueds healthy options, salty snacks, and sweet
+				By offering a diverse selection that inclueds healthy options, salty snaks, and sweet
 				treats, we can ensure our vending machines are stocked with a wide variety of items that
 				will cater to the tastes and preferences of your employees or customers.
 			</p>
@@ -187,7 +187,7 @@
 						</div>
 						<div class="carousel__item-body">
 							<p class="title">Savory</p>
-							<p>Roasted chickpeas, peanut butter crackers, protein rich snacks</p>
+							<p>Roasted chickpeas, peanut butter crackers, protein rich snaks</p>
 						</div>
 					</div>
 					<!-- Gluten-Free -->
@@ -226,7 +226,7 @@
 			<p>
 				Our stock is always expanding to meet the needs and preferences of our customers, for a more
 				comprehensive list please contact us <a
-					href="mailto:snackmaster@gmail.com"
+					href="mailto:snakmaster@gmail.com"
 					class="underline">here</a
 				>.
 			</p>
