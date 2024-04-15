@@ -12,7 +12,7 @@
 
     <div class="flex items-center gap-8">
       <LightSwitch />
-      <a href="/contactus" class="btn rounded-full font-semibold p-2 mr-2 variant-filled-tertiary border-2 border-tertiary-700">Contact Us</a>
+      <a href="/contactus" class="btn rounded-full font-semibold p-2 mr-2 variant-filled-secondary border-2 border-tertiary-700">Contact Us</a>
     </div>
   </div>
 </nav>

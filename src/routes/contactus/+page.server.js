@@ -11,6 +11,7 @@ export const actions = {
       const lastName = formData.get("lastName");
       const customerEmail = formData.get("email");
       const message = formData.get("message");
+      const address = formData.get("address");
       const city = formData.get("city");
       const state = formData.get("state");
       const zip = formData.get("zip");
@@ -18,7 +19,7 @@ export const actions = {
       let html = `<pre>
       <p>Customer Name: ${firstName} ${lastName}</p>
       <p>Customer Email: ${customerEmail}</p>
-      <p>Customer Location: ${city} ${state} ${zip}
+      <p>Customer Location: ${address} ${city} ${state} ${zip}
       <p>${message}</p>
       </pre>`;
 
