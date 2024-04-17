@@ -1,5 +1,5 @@
 
-import { EMAIL } from '$env/static/private';
+import { EMAIL_ADDRESS } from '$env/static/private';
 import transporter from '$lib/emailSetup.server.js';
 
 export const actions = {
@@ -24,8 +24,8 @@ export const actions = {
       </pre>`;
 
       const email = {
-        from: EMAIL,
-        to: EMAIL,
+        from: EMAIL_ADDRESS,
+        to: EMAIL_ADDRESS,
         subject: "Message from SnackMaster Website",
         text: message,
         html: html,
