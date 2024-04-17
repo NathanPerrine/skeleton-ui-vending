@@ -1,6 +1,5 @@
 <script lang="ts">
 	import vendingOffice from '$lib/assets/images/vendingOffice.jpg';
-	import vendingMachineAlley from '$lib/assets/images/vendingMachineAlley.jpg';
 	import isoOffice from '$lib/assets/images/isoOffice.png';
 	import sweet from '$lib/assets/images/sweet.jpg';
 	import salty from '$lib/assets/images/salty.jpg';
@@ -17,27 +16,6 @@
 
 <main class="w-full flex flex-col justify-center">
 	<!-- Hero -->
-	<!-- <div id="hero" class="w-full max-w-7xl mx-auto pb-3 flex justify-center relative">
-		<img
-			src={vendingMachineAlley}
-			alt="Vending machines in alley way"
-			class="min-w-[100vw] h-[75vh]"
-		/>
-
-		<div
-			id="heroTextContainer"
-			class="card w-5/6 md:w-96 min-h-min p-4 flex flex-col justify-center rounded-lg absolute top-[10%] md:top-[33%] md:left-16 mx-2 variant-filled-primary bg-primary-300"
-		>
-			<h1 class="h1">Welcome to SnackMaster</h1>
-			<p class="text-lg pt-4">
-				At SnackMaster, we're dedicated to providing convenient, reliable, and satisfying vending
-				solutions for businesses, schools, hospitals, and other institutions throughout the greater
-				Toledo area. With our extensive range of vending machines and unparalleled customer service,
-				we make snack time a breeze.
-			</p>
-		</div>
-	</div> -->
-
 	<div id="hero" class="w-full flex justify-center">
 		<div class="w-full max-w-7xl my-8 flex gap-8 justify-center">
 			<img src={isoOffice} alt="Isometric view of an office with vending machines" class="w-[600px] order-2 hidden md:block" />
