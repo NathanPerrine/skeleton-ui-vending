@@ -7,7 +7,7 @@
   export let leftOrRight: string
 </script>
 
-<div class="card card-hover p-4 variant-soft-secondary border-2 border-tertiary-200 flex flex-col md:flex-row items-center md:h-48 mt-2 md:mb-8">
+<div class="card card-hover p-4 variant-soft-secondary border-2 border-tertiary-200 flex flex-col md:flex-row items-center mt-2 md:mb-8 min-h-64">
   <header class={"card-header " + (leftOrRight === 'left' ? "order-1" : "order-2")}>
     <div class="min-w-12 min-h-16">
       <Icon icon={icon} class="min-w-12 min-h-16 border-2 border-tertiary-500 bg-tertiary-100 rounded-full self-center text-primary-800" />

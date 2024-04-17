@@ -18,7 +18,7 @@
 	<!-- Hero -->
 	<div id="hero" class="w-full flex justify-center">
 		<div class="w-full max-w-7xl my-8 flex gap-8 justify-center">
-			<img src={isoOffice} alt="Isometric view of an office with vending machines" class="w-[600px] order-2 hidden md:block" />
+			<img src={isoOffice} alt="Isometric view of an office with vending machines" class=" w-4/5 order-2 hidden md:block" />
 			<div
 				id="heroTextContainer"
 				class="card w-5/6 md:w-96 p-4 flex flex-col justify-center rounded-lg mx-2 variant-soft order-1 !bg-transparent"
