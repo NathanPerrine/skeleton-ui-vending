@@ -1,5 +1,7 @@
 
-import { EMAIL_ADDRESS } from '$lib/env';
+import { EMAIL_ADDRESS, EMAIL_PASSWORD } from '$lib/env';
+console.log(EMAIL_ADDRESS, EMAIL_PASSWORD)
+
 import transporter from '$lib/emailSetup.server.js';
 
 export const actions = {
