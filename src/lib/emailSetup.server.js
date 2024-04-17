@@ -1,9 +1,5 @@
 import nodemailer from "nodemailer"
-// import { EMAIL_ADDRESS, EMAIL_PASSWORD } from '$env/static/private'
-import { env } from '$env/dynamic/private'
-
-const EMAIL_ADDRESS = env.EMAIL_ADDRESS;
-const EMAIL_PASSWORD = env.EMAIL_PASSWORD;
+import { EMAIL_ADDRESS, EMAIL_PASSWORD } from '$lib/env'
 
 let transporter = nodemailer.createTransport({
   host: "smtp.mail.yahoo.com",

@@ -1,5 +1,5 @@
 
-import { EMAIL_ADDRESS } from '$env/static/private';
+import { EMAIL_ADDRESS } from '$lib/env';
 import transporter from '$lib/emailSetup.server.js';
 
 export const actions = {
